@@ -24,13 +24,22 @@ img{
 
 .slider-items-contaier {
     width: 100%;
-    height: 60%;
+    height: 60vh;
 }
 
 .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.item {
+    display: none;
+    height: 100%;
+}
+
+.active {
+    display: block;
 }
 
 .prev, .next {
@@ -41,6 +50,7 @@ img{
     top: 50%;
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     transform: translateY(-50%);
     background-color: #dedede;
 }
